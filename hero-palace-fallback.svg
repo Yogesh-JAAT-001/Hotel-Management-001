@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Imperial Palace Hotel</title>
+  <desc id="desc">Classical palace style hotel facade with pillars and golden evening lighting</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1b2d"/>
+      <stop offset="55%" stop-color="#162742"/>
+      <stop offset="100%" stop-color="#233a5e"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2438"/>
+      <stop offset="100%" stop-color="#0a111d"/>
+    </linearGradient>
+    <linearGradient id="palace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7deca"/>
+      <stop offset="100%" stop-color="#c4b291"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#f2d07a" stop-opacity="0.75"/>
+      <stop offset="55%" stop-color="#c79a3e" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <ellipse cx="960" cy="390" rx="760" ry="280" fill="url(#glow)"/>
+  <rect y="810" width="1920" height="270" fill="url(#ground)"/>
+
+  <g opacity="0.22" fill="#f8d98e" filter="url(#soft)">
+    <circle cx="320" cy="270" r="4"/>
+    <circle cx="400" cy="210" r="3"/>
+    <circle cx="560" cy="260" r="3"/>
+    <circle cx="1540" cy="230" r="3"/>
+    <circle cx="1660" cy="300" r="4"/>
+    <circle cx="1430" cy="260" r="3"/>
+  </g>
+
+  <g transform="translate(340 230)">
+    <rect x="0" y="120" width="1240" height="500" rx="8" fill="url(#palace)"/>
+    <rect x="70" y="20" width="1100" height="180" rx="10" fill="#d6c4a2"/>
+    <rect x="120" y="0" width="1000" height="70" rx="10" fill="#c8b18a"/>
+
+    <g fill="#b9a074">
+      <rect x="140" y="196" width="28" height="424"/>
+      <rect x="270" y="196" width="28" height="424"/>
+      <rect x="400" y="196" width="28" height="424"/>
+      <rect x="530" y="196" width="28" height="424"/>
+      <rect x="682" y="196" width="28" height="424"/>
+      <rect x="812" y="196" width="28" height="424"/>
+      <rect x="942" y="196" width="28" height="424"/>
+      <rect x="1072" y="196" width="28" height="424"/>
+    </g>
+
+    <g fill="#f2d992">
+      <rect x="186" y="260" width="70" height="110"/>
+      <rect x="316" y="260" width="70" height="110"/>
+      <rect x="446" y="260" width="70" height="110"/>
+      <rect x="576" y="260" width="70" height="110"/>
+      <rect x="706" y="260" width="70" height="110"/>
+      <rect x="836" y="260" width="70" height="110"/>
+      <rect x="966" y="260" width="70" height="110"/>
+
+      <rect x="186" y="410" width="70" height="110"/>
+      <rect x="316" y="410" width="70" height="110"/>
+      <rect x="446" y="410" width="70" height="110"/>
+      <rect x="576" y="410" width="70" height="110"/>
+      <rect x="706" y="410" width="70" height="110"/>
+      <rect x="836" y="410" width="70" height="110"/>
+      <rect x="966" y="410" width="70" height="110"/>
+    </g>
+
+    <rect x="560" y="410" width="120" height="210" fill="#7e6130"/>
+    <rect x="548" y="396" width="144" height="24" fill="#9f7a3a"/>
+  </g>
+
+  <g opacity="0.85">
+    <text x="960" y="122" text-anchor="middle" fill="#e6cd8a" font-size="58" font-family="Cinzel, Georgia, serif" letter-spacing="2">THE HEARTLAND ABODE</text>
+    <text x="960" y="178" text-anchor="middle" fill="#d8be7b" font-size="28" font-family="Cinzel, Georgia, serif" letter-spacing="4">IMPERIAL PALACE HOSPITALITY</text>
+  </g>
+</svg>
