@@ -1,0 +1,266 @@
+.dining-hero-banner {
+    position: relative;
+    overflow: hidden;
+    min-height: 56vh;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(120deg, rgba(15, 27, 45, 0.78) 16%, rgba(15, 27, 45, 0.72) 48%, rgba(15, 27, 45, 0.82) 100%),
+        var(--dining-hero-image, url('../images/dining/mains/main-course.png')) center/cover no-repeat;
+}
+
+.dining-hero-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 16% 20%, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0) 44%),
+        linear-gradient(180deg, rgba(15, 27, 45, 0.18) 0%, rgba(15, 27, 45, 0.68) 100%);
+    pointer-events: none;
+}
+
+.dining-hero-inner {
+    position: relative;
+    z-index: 1;
+    padding: 112px 0 70px;
+}
+
+.dining-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    background: rgba(15, 27, 45, 0.58);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #f0daa0;
+    padding: 6px 14px;
+    font-size: 0.74rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.dining-hero-title {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    color: #f3dc9d;
+    text-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.dining-hero-subtitle {
+    max-width: 740px;
+    font-size: clamp(1rem, 1.9vw, 1.2rem);
+    color: rgba(246, 239, 224, 0.92);
+    margin-bottom: 0;
+}
+
+.menu-kpi {
+    border-radius: 16px;
+    border: 1px solid rgba(139, 111, 47, 0.22);
+    box-shadow: 0 10px 22px rgba(27, 41, 81, 0.1);
+    background-image: var(--glass-surface);
+    backdrop-filter: blur(6px);
+}
+
+.menu-kpi .metric {
+    font-size: 1.52rem;
+    font-weight: 700;
+    color: var(--luxury-navy);
+}
+
+.menu-filters {
+    background-image: var(--marble-surface);
+    border-radius: 16px;
+    border: 1px solid rgba(139, 111, 47, 0.22);
+    box-shadow: var(--shadow-soft);
+}
+
+.category-scroll-nav {
+    position: sticky;
+    top: 76px;
+    z-index: 10;
+    background-image: linear-gradient(160deg, rgba(247, 241, 228, 0.96) 0%, rgba(240, 231, 212, 0.94) 100%);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(139, 111, 47, 0.24);
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 10px 22px rgba(27, 41, 81, 0.12);
+}
+
+.category-btn {
+    border: 1px solid rgba(139, 111, 47, 0.34);
+    color: #1d2a4f;
+    border-radius: 999px;
+    padding: 8px 14px;
+    background-image: linear-gradient(140deg, rgba(249, 244, 232, 0.95) 0%, rgba(236, 226, 203, 0.92) 100%);
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin: 4px;
+    transition: transform 0.22s var(--ease-luxury), box-shadow 0.22s var(--ease-luxury), border-color 0.22s var(--ease-luxury), background 0.22s var(--ease-luxury);
+}
+
+.category-btn:hover {
+    transform: translateY(-2px);
+    border-color: rgba(212, 175, 55, 0.56);
+    box-shadow: var(--shadow-glow);
+}
+
+.category-btn .badge {
+    background: rgba(15, 27, 45, 0.82) !important;
+    color: #f8eed5;
+    border: 1px solid rgba(212, 175, 55, 0.34);
+}
+
+.category-btn.active,
+.category-btn:hover.active {
+    background: linear-gradient(160deg, #d4af37 0%, #b18b27 100%);
+    color: #1a1308;
+    border-color: rgba(212, 175, 55, 0.8);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.42);
+}
+
+.category-btn.active .badge {
+    background: rgba(15, 27, 45, 0.24) !important;
+    color: #2a200f;
+    border-color: rgba(15, 27, 45, 0.24);
+}
+
+.menu-category-section {
+    border-radius: 16px;
+    border: 1px solid rgba(139, 111, 47, 0.22);
+    background-image: var(--marble-surface);
+    box-shadow: 0 10px 24px rgba(27, 41, 81, 0.1);
+    padding: 18px;
+    margin-top: 18px;
+}
+
+.menu-category-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(139, 111, 47, 0.24);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+}
+
+.menu-category-title h4 {
+    margin: 0;
+    font-size: 1.18rem;
+    color: var(--luxury-navy);
+}
+
+.menu-category-title .badge {
+    background: linear-gradient(160deg, #d4af37 0%, #b08a27 100%) !important;
+    color: #1b1408;
+    border-radius: 999px;
+}
+
+.food-menu-card {
+    border: 1px solid rgba(139, 111, 47, 0.22);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(27, 41, 81, 0.1);
+    transition: transform 0.22s var(--ease-luxury), box-shadow 0.22s var(--ease-luxury), border-color 0.22s var(--ease-luxury);
+    height: 100%;
+    background-image: var(--marble-surface);
+}
+
+.food-menu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 26px rgba(27, 41, 81, 0.16);
+    border-color: rgba(212, 175, 55, 0.38);
+}
+
+.food-menu-card .thumb {
+    height: 178px;
+    object-fit: cover;
+    width: 100%;
+    background: #ebe4d7;
+}
+
+.food-menu-card .content {
+    padding: 14px;
+}
+
+.menu-category-badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 4px 10px;
+    background: rgba(15, 27, 45, 0.1);
+    border: 1px solid rgba(15, 27, 45, 0.16);
+    color: #1c2f50;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+.food-title {
+    font-size: 1.04rem;
+    font-weight: 700;
+    color: var(--luxury-navy);
+    margin: 0 0 6px;
+}
+
+.food-desc {
+    font-size: 0.86rem;
+    color: #5d6579;
+    min-height: 48px;
+    line-height: 1.55;
+}
+
+.veg-badge,
+.nonveg-badge {
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.veg-badge {
+    background: #e6f8ec;
+    color: #1e7f49;
+}
+
+.nonveg-badge {
+    background: #fee9e4;
+    color: #9f382d;
+}
+
+.food-price {
+    font-size: 1.16rem;
+    font-weight: 700;
+    color: #8d6211;
+    text-shadow: 0 1px 0 rgba(255, 248, 230, 0.5);
+}
+
+.hidden-item {
+    display: none !important;
+}
+
+.category-empty {
+    border: 1px dashed rgba(139, 111, 47, 0.42);
+    border-radius: 13px;
+    padding: 14px;
+    text-align: center;
+    color: #5f6980;
+    background-image: linear-gradient(130deg, rgba(248, 244, 233, 0.9), rgba(238, 229, 212, 0.9));
+}
+
+@media (max-width: 991.98px) {
+    .category-scroll-nav {
+        position: static;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .dining-hero-banner {
+        min-height: 48vh;
+    }
+
+    .dining-hero-inner {
+        padding: 92px 0 54px;
+    }
+}

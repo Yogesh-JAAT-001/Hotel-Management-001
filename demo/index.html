@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Heartland Abode - Demo Preview</title>
+  <style>
+    :root {
+      --navy: #0f1b2d;
+      --gold: #d4af37;
+      --cream: #f6f4ef;
+      --ink: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(145deg, #f8f6f1, #efe9dd);
+    }
+    .wrap { width: min(1100px, 92vw); margin: 24px auto 40px; }
+    .hero {
+      border-radius: 22px;
+      overflow: hidden;
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 18px 40px rgba(15, 27, 45, 0.25);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      margin-bottom: 20px;
+    }
+    .hero img { width: 100%; max-height: 360px; object-fit: cover; display: block; opacity: 0.78; }
+    .hero .content { padding: 20px; }
+    h1 { margin: 0 0 8px; font-family: "Playfair Display", Georgia, serif; }
+    p { line-height: 1.65; }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .btn {
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-gold { background: linear-gradient(145deg, #e4c05b, #c69a2a); color: #1f2937; }
+    .btn-outline { border-color: rgba(255,255,255,.5); color: #fff; background: rgba(255,255,255,.08); }
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card {
+      border-radius: 16px;
+      background: rgba(255,255,255,.85);
+      border: 1px solid rgba(15,27,45,.1);
+      box-shadow: 0 10px 24px rgba(15,27,45,.1);
+      overflow: hidden;
+    }
+    .card img, .card video { width: 100%; display: block; max-height: 220px; object-fit: cover; }
+    .card .txt { padding: 12px; font-size: 14px; }
+    .note {
+      margin-top: 16px;
+      background: rgba(15, 27, 45, 0.06);
+      border: 1px solid rgba(15, 27, 45, 0.14);
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <img src="../assets/images/hero/hero-fallback.png" alt="Heartland Abode Demo">
+      <div class="content">
+        <h1>The Heartland Abode - Demo Walkthrough</h1>
+        <p>
+          This static demo is provided for GitHub Pages where PHP and MySQL cannot execute.
+          For full functionality (booking, auth, admin dashboards), open the backend deployment.
+        </p>
+        <div class="btns">
+          <a class="btn btn-gold" href="../index.php" target="_blank" rel="noopener">Open Full Live Demo</a>
+          <a class="btn btn-outline" href="../admin/login.php" target="_blank" rel="noopener">Admin Login</a>
+          <a class="btn btn-outline" href="../index.html">Back to PBL Page</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <video controls preload="metadata" poster="../assets/images/hero/hero-fallback.png">
+          <source src="../assets/video/video-for-front.mp4" type="video/mp4">
+        </video>
+        <div class="txt">Homepage demo video with luxury hero experience.</div>
+      </article>
+      <article class="card">
+        <img src="../assets/images/rooms/standard/standard-room.png" alt="Room Module">
+        <div class="txt">Room browsing and booking-ready user experience.</div>
+      </article>
+      <article class="card">
+        <img src="../assets/images/food/butter-chicken.png" alt="Dining Module">
+        <div class="txt">Dining catalog with category-wise rich media presentation.</div>
+      </article>
+    </section>
+
+    <p class="note">
+      Submission mode: Static preview + backend links. Compatible with GitHub Pages evaluation.
+    </p>
+  </div>
+</body>
+</html>
